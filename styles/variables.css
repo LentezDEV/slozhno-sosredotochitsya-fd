@@ -1,4 +1,19 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  /* цвета */
+  --color-text: #f1b2ce; /* основной цвет текста */
+  --color-accent: #ff0070; /* акцентный (неоновый) цвет */
+  --color-main:#DB00FF; 
+  --color-bg:#000028; 
+
+  /* типографика */
+  --font-base: "IBM Plex Mono", monospace;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fs-base: 1.125rem;
+  --lh-base: 23.4px;
+
+  /* размеры блоков */
+  --page-max-width-mobile: 375px;
+  --page-max-width-tablet: 768px;
+  --page-max-width-desktop: 1200px;
+}
