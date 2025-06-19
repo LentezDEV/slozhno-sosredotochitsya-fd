@@ -33,7 +33,7 @@
   width: 1.5rem;
   height: 1.5rem;
   border-style: solid;
-  border-color: #ff0070;
+  border-color: var(--color-accent);
 }
 .decorated-zone::before {
   top: 10px;
@@ -78,7 +78,7 @@
   margin-left: 0.5em; /* отступ от текста REC */
   border-radius: 50%;
   /* основа – плотное ядро */
-  background-color: #ff0070;
+  background-color: var(--color-accent);
   /* наружное свечение */
   box-shadow: 0 0 4px rgba(255, 0, 112, 0.8), 0 0 10px rgba(255, 0, 112, 0.6),
     0 0 20px rgba(255, 0, 112, 0.4);
@@ -109,11 +109,11 @@
   min-width: 70px;
   max-height: 26px; /* жёстко задаём высоту */
   padding: 0; /* убираем лишние паддинги */
-  box-sizing:content-box; /* чтобы рамка входила в height */
+  box-sizing: content-box; /* чтобы рамка входила в height */
 
   background: none;
   border: 1px solid transparent; /* рамка всегда есть, но прозрачная */
-  color: #ff0070;
+  color: var(--color-accent);
   font-family: var(--font-base);
   font-size: var(--fs-base);
   text-transform: lowercase;
@@ -145,7 +145,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid #ff0070;
+  border: 1px solid var(--color-accent);
 }
 
 .header__theme-menu-button_type_neon {
@@ -154,7 +154,7 @@
 .hero__title {
   grid-row: 3/4;
   font-family: var(--font-base, sans-serif);
-  color: var(--color-main);
+  color: var(--color-main-title);
   font-size: clamp(7.1875rem, 6.8893rem + 1.2723vw, 7.5rem);
   line-height: 83%;
   padding-block-end: 55px;
@@ -164,7 +164,7 @@
 .hero__description-text {
   grid-row: 4/5;
   background-color: var(--color-accent);
-  color: var(--color-bg);
+  color: var(--color-subtitle);
   font-family: var(--font-base, sans-serif);
   font-weight: var(--fw-bold);
   font-size: 18px;
@@ -199,7 +199,7 @@
   align-items: center;
   height: 23px;
   background-color: var(--color-accent);
-  color: var(--color-bg);
+  color: var(--color-subtitle);
   font-family: var(--font-base, sans-serif);
   font-weight: var(--fw-bold);
   line-height: var(--lh-base);
@@ -280,7 +280,7 @@
   align-items: center;
   height: 23px;
   background-color: var(--color-accent);
-  color: var(--color-bg);
+  color: var(--color-subtitle);
   font-family: var(--font-base, sans-serif);
   font-weight: var(--fw-bold);
   line-height: var(--lh-base);
@@ -318,7 +318,7 @@
 .footer__focus {
   font-family: var(--font-base, sans-serif);
   font-weight: var(--fw-bold);
-  color: var(--color-main);
+  color: var(--color-main-title);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   text-shadow: 4px 4px var(--color-accent);
@@ -484,18 +484,16 @@
 }
 
 @media (min-width: 1024px) {
-  
-
   .header {
     padding-block-start: 20px;
     padding-inline-end: 20px;
     padding-block-end: 134px;
   }
-  .header__rec{
-    padding-block-end: 273px ;
+  .header__rec {
+    padding-block-end: 273px;
   }
 
-  .hero__title{
+  .hero__title {
     padding-block-end: 114px;
   }
 
@@ -506,7 +504,7 @@
 
   .header__theme-menu-item:not(:last-child) {
     padding-block-end: 0px;
-}
+  }
   .decorated-zone::before {
     top: 20px;
     right: 20px;
@@ -521,7 +519,6 @@
     grid-column: 1 / -1;
     justify-self: center;
     margin-inline-start: 20px;
-    
   }
   .header__theme-menu-list {
     display: flex;
@@ -539,21 +536,21 @@
     justify-self: end; /* прижмём к правому краю колонки */
   }
 
-  .text-section--why{
+  .text-section--why {
     grid-template-columns: 314px 1fr;
   }
 
-  .text-section--reducing{
+  .text-section--reducing {
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
   }
 
-  .reducing-section__title{
+  .reducing-section__title {
     max-width: 315px;
     grid-row: 1;
   }
 
-  .text-section__content-reducing{
+  .text-section__content-reducing {
     display: flex;
     flex-wrap: nowrap;
     gap: 20px;
@@ -563,11 +560,11 @@
     align-items: stretch;
   }
 
-  .text-section__subtitle{
+  .text-section__subtitle {
     min-width: 315px;
   }
 
-  .tips-section{
+  .tips-section {
     display: grid;
     grid-template-columns: 315px 1fr;
   }
@@ -582,8 +579,7 @@
     align-items: center;
   }
 
-  .footer__focus{
+  .footer__focus {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-
 }

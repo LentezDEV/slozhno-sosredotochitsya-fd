@@ -1,9 +1,19 @@
 :root {
-  /* цвета */
-  --color-text: #f1b2ce; /* основной цвет текста */
-  --color-accent: #ff0070; /* акцентный (неоновый) цвет */
-  --color-main:#DB00FF; 
-  --color-bg:#000028; 
+  /* dark */
+  --color-text: #f1b2ce; 
+  --color-accent: #ff0070; 
+  --color-main-title:#DB00FF; 
+  --color-bg:#000028;
+  --color-subtitle:#000028;  
+
+  /* light */
+  --color-text_light: #353430; 
+  --color-accent_light: #FF8DCB; 
+  --color-main-title_light:#FFC2E6; 
+  --color-bg_light:#FFF1F7; 
+  --color-subtitle_light:#353430; 
+
+
 
   /* типографика */
   --font-base: "IBM Plex Mono", monospace;
@@ -11,9 +21,4 @@
   --fw-bold: 700;
   --fs-base: 1.125rem;
   --lh-base: 23.4px;
-
-  /* размеры блоков */
-  --page-max-width-mobile: 375px;
-  --page-max-width-tablet: 768px;
-  --page-max-width-desktop: 1200px;
 }
