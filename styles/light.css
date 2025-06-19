@@ -9,46 +9,39 @@
 }
 
 /* 2. Глобальный цвет текста для всей страницы  */
-.theme-day .page,
-.theme-light .page {
+.theme-day .page {
   color: var(--color-text);            /* параграфы и «обычный» текст */
   background-color: var(--color-bg);   /* чтобы не было «мигания» */
 }
 
 /* 3. Хедер — светлая картинка */
-.theme-day .header,
-.theme-light .header {
+.theme-day .header {
   background-image: url("../images/cover-image-light.png");
 }
 
 /* 4. «REC» скрыт */
-.theme-day  .header__rec,
-.theme-light.header__rec {
+.theme-day  .header__rec {
   visibility: hidden;     /* элемент невидим */
   pointer-events: none;   /* игнорируем клики/фокус */
 }
 
 /* 5. Цвет заголовка текста (text-section__title) —
       по макету он НЕ акцентный, а тот же, что и обычный текст */
-.theme-day .text-section__title,
-.theme-light .text-section__title {
+.theme-day .text-section__title {
   color: var(--color-text);            /* #353430 */
 }
 
 /* 6. Цвет рамки при :hover у кнопок-переключателей темы */
-.theme-day .header__theme-menu-button:hover,
-.theme-light .header__theme-menu-button:hover {
+.theme-day .header__theme-menu-button:hover{
   border-color: rgba(255, 141, 203, 0.4); /* #FF8DCB с альфой */
 }
 
 /* 7. Цвет outline ссылок при :focus-visible */
-.theme-day .main-content a:focus-visible,
-.theme-light .main-content a:focus-visible {
+.theme-day .main-content a:focus-visible {
   outline-color: var(--color-accent);
 }
 
 /* 8. Активная рамка выбранной кнопки меню темы */
-.theme-day .header__theme-menu-button_active,
-.theme-light .header__theme-menu-button_active {
+.theme-day .header__theme-menu-button_active{
   border-color: var(--color-accent);
 }
