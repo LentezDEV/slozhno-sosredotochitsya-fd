@@ -1,5 +1,4 @@
-
-:root.theme-day .page{
+:root.theme-day .page {
   --page-bg-image: url("../images/cover-image-light.png");
 }
 
@@ -14,7 +13,6 @@
 }
 
 @media (prefers-color-scheme: light) {
-  
   .theme-day .header__rec,
   .theme-auto .header__rec {
     visibility: hidden;

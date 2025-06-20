@@ -5,7 +5,7 @@
   width: clamp(375px, 100vw, 1440px);
   margin-inline: auto;
   background-color: var(--color-bg);
-  background-image: var(--page-bg-image);;
+  background-image: var(--page-bg-image);
   background-position: center;
   background-size: cover;
   color: var(--color-text);
@@ -288,6 +288,7 @@
   max-height: 668px;
   padding-inline: 10px;
   padding-block: 10px;
+  background-image: none; 
 }
 
 .footer__focus {
@@ -506,8 +507,6 @@
     flex-direction: row;
     gap: 10px;
   }
-
-
 
   .text-section--why {
     grid-template-columns: 314px 1fr;
