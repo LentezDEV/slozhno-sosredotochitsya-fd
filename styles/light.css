@@ -1,45 +1,46 @@
 
-:root.theme-day {
-  --color-text:        var(--color-text_light);        
-  --color-accent:      var(--color-accent_light);      
-  --color-main-title:  var(--color-main-title_light);  
-  --color-bg:          var(--color-bg_light);          
-  --color-subtitle:    var(--color-subtitle_light);    
+/* -------------------------------------------------
+   1. Светлая тема «по умолчанию»,
+      если пользовательская ОС = light
+--------------------------------------------------*/
+
+@media (prefers-color-scheme: light) {
+  :root:not(.theme-dark):not(.theme-day) {
+    --color-text:        var(--color-text_light);
+    --color-accent:      var(--color-accent_light);
+    --color-main-title:  var(--color-main-title_light);
+    --color-bg:          var(--color-bg_light);
+    --color-subtitle:    var(--color-subtitle_light);
+  }
 }
 
+/* -------------------------------------------------
+   2. Ручное включение светлой темы (.theme-day)
+--------------------------------------------------*/
 
-.theme-day .page {
-  color: var(--color-text);            
-  background-color: var(--color-bg);  
+:root.theme-day,
+.theme-day {
+  --color-text:        var(--color-text_light);
+  --color-accent:      var(--color-accent_light);
+  --color-main-title:  var(--color-main-title_light);
+  --color-bg:          var(--color-bg_light);
+  --color-subtitle:    var(--color-subtitle_light);
 }
 
+/* -------------------------------------------------
+   3. Стили компонентов, которые в светлой теме
+      отличаются
+--------------------------------------------------*/
 
+.theme-day .page  { background-color: var(--color-bg); }
+
+/* фон шапки */
 .theme-day .header {
   background-image: url("../images/cover-image-light.png");
 }
 
-
-.theme-day  .header__rec {
-  visibility: hidden;     
-  pointer-events: none;   
-}
-
-
-.theme-day .text-section__title {
-  color: var(--color-text);           
-}
-
-
-.theme-day .header__theme-menu-button:hover{
-  border-color: rgba(255, 141, 203, 0.4); 
-}
-
-
-.theme-day .main-content a:focus-visible {
-  outline-color: var(--color-accent);
-}
-
-
-.theme-day .header__theme-menu-button_active{
-  border-color: var(--color-accent);
+/* скрываем REC */
+.theme-day .header__rec {
+  visibility: hidden;
+  pointer-events: none;
 }

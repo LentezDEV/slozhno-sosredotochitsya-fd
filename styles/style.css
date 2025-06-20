@@ -2,13 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  width: clamp(375px, 100vw, 1024px);
+  width: clamp(375px, 100vw, 1440px);
   margin-inline: auto;
   background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 .header {
   position: relative;
+  height: 100vh;
+  max-height: 668px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, max-content);
@@ -71,7 +74,8 @@
   cursor: pointer;
 }
 
-.header__rec-text {}
+.header__rec-text {
+}
 
 .header__rec-dot {
   display: inline-block;
@@ -94,12 +98,16 @@
   padding-block-end: 65px;
 }
 
-.header__theme-menu-list {}
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-.header__theme-menu-item {}
-
-.header__theme-menu-item:not(:last-child) {
-  padding-block-end: 10px;
+.header__theme-menu-item {
 }
 
 .header__theme-menu-button {
@@ -115,6 +123,7 @@
   color: var(--color-accent);
   font-family: var(--font-base);
   font-size: var(--fs-base);
+  line-height: 1.4;
   text-transform: lowercase;
   background: none;
   transition: border-color 0.2s ease;
@@ -131,20 +140,19 @@
 }
 
 .header__theme-menu-button_active {
-  border-color: var(--color-accent);
   cursor: default;
   pointer-events: none;
-}
-
-.header__theme-menu-button_type_day {}
-
-.header__theme-menu-button_type_auto {}
-
-.header__theme-menu-button_active {
   border: 1px solid var(--color-accent);
 }
 
-.header__theme-menu-button_type_neon {}
+.header__theme-menu-button_type_day {
+}
+
+.header__theme-menu-button_type_auto {
+}
+
+.header__theme-menu-button_type_neon {
+}
 
 .hero__title {
   grid-row: 3/4;
@@ -171,7 +179,8 @@
   padding-inline: 10px;
 }
 
-.text-section {}
+.text-section {
+}
 
 .text-section--why {
   margin-block-end: 50px;
@@ -256,7 +265,8 @@
   margin-block-end: 20px;
 }
 
-.tips-section__item {}
+.tips-section__item {
+}
 
 .tips-section__item-title {
   font-weight: var(--fw-regular);
@@ -292,6 +302,7 @@
 }
 
 .footer {
+  min-height: 100vh;
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
@@ -321,6 +332,8 @@
   }
 
   .header {
+    min-height: 100vh;
+    max-height: 768px;
     margin-block-end: 60px;
     padding-inline-start: 0px;
     padding-inline-end: 20px;
@@ -515,10 +528,6 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-  }
-
-  .header__theme-menu-item {
-    padding-block-end: 0;
   }
 
   .header__rec {
