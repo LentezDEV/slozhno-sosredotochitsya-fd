@@ -1,3 +1,5 @@
+https://github.com/LentezDEV/slozhno-sosredotochitsya-fd
+
 # 🌓 No Focus
 
 Учебный лендинг о трудностях концентрации.  
