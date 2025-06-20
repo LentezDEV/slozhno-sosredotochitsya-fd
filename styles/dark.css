@@ -9,8 +9,8 @@
 }
 
 
-:root.theme-neon,
-.theme-neon .page {
+:root.theme-dark,
+.theme-dark .page {
   --color-text: #f1b2ce;
   --color-accent: #ff0070;
   --color-main-title: #db00ff;
