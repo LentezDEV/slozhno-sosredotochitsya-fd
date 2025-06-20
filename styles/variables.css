@@ -5,6 +5,7 @@
   --color-main-title: #db00ff;
   --color-bg: #000028;
   --color-subtitle: #000028;
+  --page-bg-image: url("../images/cover-image-dark.png");
 
   /* light */
   --color-text_light: #353430;

@@ -5,6 +5,9 @@
   width: clamp(375px, 100vw, 1440px);
   margin-inline: auto;
   background-color: var(--color-bg);
+  background-image: var(--page-bg-image);;
+  background-position: center;
+  background-size: cover;
   color: var(--color-text);
   background-attachment: fixed;
 }
@@ -21,10 +24,6 @@
   padding-inline: 10px;
   padding-block-start: 10px;
   padding-block-end: 66px;
-  background-image: url(../images/cover-image-dark.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .decorated-zone {

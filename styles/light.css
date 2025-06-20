@@ -1,3 +1,8 @@
+
+:root.theme-day .page{
+  --page-bg-image: url("../images/cover-image-light.png");
+}
+
 @media (prefers-color-scheme: light) {
   :root:not(.theme-dark):not(.theme-day) {
     --color-text: var(--color-text_light);
@@ -9,13 +14,26 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .theme-day .header,
-  .theme-auto .header {
-    background-image: url("../images/cover-image-light.png");
-  }
-
+  
   .theme-day .header__rec,
   .theme-auto .header__rec {
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto .page {
+    --page-bg-image: url("../images/cover-image-light.png");
+  }
+}
+/* авто + тёмная система */
+@media (prefers-color-scheme: dark) {
+  :root.theme-auto .page {
+    --page-bg-image: url("../images/cover-image-dark.png");
+  }
+
+  .theme-day .header__rec {
     visibility: hidden;
     pointer-events: none;
   }
@@ -28,19 +46,4 @@
   --color-main-title: var(--color-main-title_light);
   --color-bg: var(--color-bg_light);
   --color-subtitle: var(--color-subtitle_light);
-}
-
-.theme-day .page {
-  background-color: var(--color-bg);
-}
-
-/* фон шапки */
-.theme-day .header {
-  background-image: url("../images/cover-image-light.png");
-}
-
-/* скрываем REC */
-.theme-day .header__rec {
-  visibility: hidden;
-  pointer-events: none;
 }
