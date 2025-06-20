@@ -6,6 +6,7 @@
   margin-inline: auto;
   background-color: var(--color-bg);
   color: var(--color-text);
+  background-attachment: fixed;
 }
 
 .header {
@@ -74,9 +75,6 @@
   cursor: pointer;
 }
 
-.header__rec-text {
-}
-
 .header__rec-dot {
   display: inline-block;
   width: 0.6em;
@@ -105,9 +103,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.header__theme-menu-item {
 }
 
 .header__theme-menu-button {
@@ -145,15 +140,6 @@
   border: 1px solid var(--color-accent);
 }
 
-.header__theme-menu-button_type_day {
-}
-
-.header__theme-menu-button_type_auto {
-}
-
-.header__theme-menu-button_type_neon {
-}
-
 .hero__title {
   grid-row: 3/4;
   padding-block-end: 55px;
@@ -177,9 +163,6 @@
 
 .main-content {
   padding-inline: 10px;
-}
-
-.text-section {
 }
 
 .text-section--why {
@@ -464,12 +447,6 @@
   .images-section__img-street {
     grid-area: img-street;
     object-fit: cover;
-  }
-
-  .images-section__img {
-    display: block;
-    width: 100%;
-    height: 100%;
   }
 
   .footer {

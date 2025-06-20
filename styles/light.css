@@ -1,4 +1,3 @@
-
 /* -------------------------------------------------
    1. Светлая тема «по умолчанию»,
       если пользовательская ОС = light
@@ -6,11 +5,11 @@
 
 @media (prefers-color-scheme: light) {
   :root:not(.theme-dark):not(.theme-day) {
-    --color-text:        var(--color-text_light);
-    --color-accent:      var(--color-accent_light);
-    --color-main-title:  var(--color-main-title_light);
-    --color-bg:          var(--color-bg_light);
-    --color-subtitle:    var(--color-subtitle_light);
+    --color-text: var(--color-text_light);
+    --color-accent: var(--color-accent_light);
+    --color-main-title: var(--color-main-title_light);
+    --color-bg: var(--color-bg_light);
+    --color-subtitle: var(--color-subtitle_light);
   }
 }
 
@@ -20,11 +19,11 @@
 
 :root.theme-day,
 .theme-day {
-  --color-text:        var(--color-text_light);
-  --color-accent:      var(--color-accent_light);
-  --color-main-title:  var(--color-main-title_light);
-  --color-bg:          var(--color-bg_light);
-  --color-subtitle:    var(--color-subtitle_light);
+  --color-text: var(--color-text_light);
+  --color-accent: var(--color-accent_light);
+  --color-main-title: var(--color-main-title_light);
+  --color-bg: var(--color-bg_light);
+  --color-subtitle: var(--color-subtitle_light);
 }
 
 /* -------------------------------------------------
@@ -32,7 +31,9 @@
       отличаются
 --------------------------------------------------*/
 
-.theme-day .page  { background-color: var(--color-bg); }
+.theme-day .page {
+  background-color: var(--color-bg);
+}
 
 /* фон шапки */
 .theme-day .header {

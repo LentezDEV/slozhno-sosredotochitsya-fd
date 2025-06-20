@@ -1,19 +1,17 @@
 :root {
   /* dark */
-  --color-text: #f1b2ce; 
-  --color-accent: #ff0070; 
-  --color-main-title:#DB00FF; 
-  --color-bg:#000028;
-  --color-subtitle:#000028;  
+  --color-text: #f1b2ce;
+  --color-accent: #ff0070;
+  --color-main-title: #db00ff;
+  --color-bg: #000028;
+  --color-subtitle: #000028;
 
   /* light */
-  --color-text_light: #353430; 
-  --color-accent_light: #FF8DCB; 
-  --color-main-title_light:#FFC2E6; 
-  --color-bg_light:#FFF1F7; 
-  --color-subtitle_light:#353430; 
-
-
+  --color-text_light: #353430;
+  --color-accent_light: #ff8dcb;
+  --color-main-title_light: #ffc2e6;
+  --color-bg_light: #fff1f7;
+  --color-subtitle_light: #353430;
 
   /* типографика */
   --font-base: "IBM Plex Mono", monospace;
