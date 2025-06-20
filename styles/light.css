@@ -1,9 +1,8 @@
-:root.theme-day .page {
-  --page-bg-image: url("../images/cover-image-light.png");
-}
+/* 1. Цвета и фон для светлой темы */
 
 @media (prefers-color-scheme: light) {
-  :root:not(.theme-dark):not(.theme-day) {
+  :root.theme-auto .page {
+    --page-bg-image: url("../images/cover-image-light.png");
     --color-text: var(--color-text_light);
     --color-accent: var(--color-accent_light);
     --color-main-title: var(--color-main-title_light);
@@ -13,35 +12,74 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .theme-day .header__rec,
-  .theme-auto .header__rec {
+  :root.theme-auto .header__rec {
     visibility: hidden;
     pointer-events: none;
   }
 }
 
 @media (prefers-color-scheme: light) {
-  :root.theme-auto .page {
-    --page-bg-image: url("../images/cover-image-light.png");
-  }
-}
-/* авто + тёмная система */
-@media (prefers-color-scheme: dark) {
-  :root.theme-auto .page {
-    --page-bg-image: url("../images/cover-image-dark.png");
-  }
-
-  .theme-day .header__rec {
-    visibility: hidden;
-    pointer-events: none;
+  :root.theme-auto .header__theme-menu-button {
+    color: var(--color-text_light);
+    border-color: transparent;
   }
 }
 
-:root.theme-day,
-.theme-day {
+@media (prefers-color-scheme: light) {
+  :root.theme-auto .header__theme-menu-button_active {
+    color: var(--color-text_light);
+    border-color: var(--color-text_light);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto .decorated-zone::before,
+  :root.theme-auto .decorated-zone::after {
+    border-color: var(--color-text_light);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto .text-section__title {
+    color: #353430;
+  }
+}
+
+:root.theme-day {
+  --page-bg-image: url("../images/cover-image-light.png");
   --color-text: var(--color-text_light);
   --color-accent: var(--color-accent_light);
   --color-main-title: var(--color-main-title_light);
   --color-bg: var(--color-bg_light);
   --color-subtitle: var(--color-subtitle_light);
+}
+
+.theme-day .page {
+  background-image: var(--page-bg-image);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+.theme-day .header__rec {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.theme-day .header__theme-menu-button {
+  color: #353430;
+  border-color: transparent;
+}
+
+.theme-day .header__theme-menu-button_active {
+  color: #353430;
+  border-color: #353430;
+}
+
+.theme-day .decorated-zone::before,
+.theme-day .decorated-zone::after {
+  border-color: #353430;
+}
+
+.theme-day .text-section__title {
+  color: #353430;
 }

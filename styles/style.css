@@ -288,7 +288,8 @@
   max-height: 668px;
   padding-inline: 10px;
   padding-block: 10px;
-  background-image: none; 
+  background-image: none;
+  background-color: var(--color-bg);
 }
 
 .footer__focus {
