@@ -209,15 +209,11 @@
 .main-content a {
   position: relative;
   outline: none;
-  color: var(--color-accent);
-  text-decoration: none;
-  transition: box-shadow 0.2s ease, border 0.2s ease;
-}
-
-.main-content a {
   color: var(--color-text);
   text-shadow: 1px 1px var(--color-accent);
   background-color: transparent;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease, border 0.2s ease;
 }
 
 .main-content a:hover {
@@ -247,7 +243,6 @@
   min-height: 47px;
   margin-block-end: 20px;
 }
-
 
 .tips-section__item-title {
   font-weight: var(--fw-regular);
@@ -472,6 +467,9 @@
 
   .header__rec {
     padding-block-end: 273px;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
   }
 
   .hero__title {
@@ -510,11 +508,7 @@
     gap: 10px;
   }
 
-  .header__rec {
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: end;
-  }
+
 
   .text-section--why {
     grid-template-columns: 314px 1fr;
