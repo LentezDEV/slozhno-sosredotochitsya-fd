@@ -4,16 +4,11 @@
   переключая тему
 */
 
-:root.theme-dark .page {
-  --page-bg-image: url("../images/cover-image-dark.png");
-}
-
-
-:root.theme-dark,
-.theme-dark .page {
+:root.theme-dark {
   --color-text: #f1b2ce;
   --color-accent: #ff0070;
   --color-main-title: #db00ff;
   --color-bg: #000028;
   --color-subtitle: #000028;
+  --page-bg-image: url("../images/cover-image-dark.png");
 }

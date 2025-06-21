@@ -59,11 +59,12 @@
 }
 
 .header__rec {
+  position: relative;
   display: inline-flex;
   grid-row: 1/2;
   justify-self: end;
   align-items: center;
-  padding-inline-end: 9px;
+  padding-inline-end: 28px;
   padding-block-end: 39px;
   color: var(--color-accent);
   font-family: var(--font-base);
@@ -74,22 +75,21 @@
   cursor: pointer;
 }
 
-.header__rec-dot {
-  display: inline-block;
+.header__rec::after {
+  content: "";
+  position: absolute;
+  /* тут точно такие же размеры и тень, что были у .header__rec-dot: */
   width: 0.6em;
   height: 0.6em;
-  margin-left: 0.5em;
   border-radius: 50%;
-
+  background-color: var(--color-accent);
   box-shadow: 0 0 4px rgba(255, 0, 112, 0.8), 0 0 10px rgba(255, 0, 112, 0.6),
     0 0 20px rgba(255, 0, 112, 0.4);
-
-  background-color: var(--color-accent);
+  top: 2; /* выставьте отступы, чтобы точка стояла справа от «REC» */
+  right: 0.5em;
 }
 
 .header__theme-menu {
-  display: flex;
-  flex-direction: column;
   grid-row: 2/3;
   justify-self: end;
   padding-block-end: 65px;
