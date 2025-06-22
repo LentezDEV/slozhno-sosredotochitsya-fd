@@ -62,8 +62,8 @@
   grid-row: 1;
   justify-self: end;
   align-self: start;
-  padding-inline-end: 28px;
   margin-block-end: 39px;
+  padding-inline-end: 28px;
   color: var(--color-accent);
   font-family: var(--font-base);
   font-weight: var(--fw-regular);
@@ -134,8 +134,8 @@
 
 .hero__title {
   grid-row: 3;
-  align-self: center;
   justify-self: start;
+  align-self: center;
   color: var(--color-main-title);
   font-family: var(--font-base, sans-serif);
   font-size: clamp(7.1875rem, 6.8893rem + 1.2723vw, 7.5rem);
@@ -212,9 +212,11 @@ a:focus-visible {
   outline: 1px auto var(--color-accent);
   outline-offset: 1px;
 }
+
 .header__theme-menu-button:hover {
   border-color: var(--color-accent-40);
 }
+
 .header__theme-menu-button:focus {
   border: none;
   border-bottom: 1px solid var(--color-accent);
@@ -284,14 +286,14 @@ a:focus-visible {
 }
 
 .footer__focus {
+  justify-self: center;
+  align-self: center;
   color: var(--color-main-title);
   font-family: var(--font-base, sans-serif);
   font-weight: var(--fw-bold);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   text-shadow: 4px 4px var(--color-accent);
-  align-self: center;
-  justify-self: center;
 }
 
 @media (min-width: 768px) {
@@ -308,15 +310,14 @@ a:focus-visible {
     padding-block-start: 20px;
     padding-block-end: 183px;
   }
+
   .header__rec {
     margin-block-end: 146px;
   }
-  .header__theme-menu {
-  }
 
   .hero__description-text {
-    margin-inline-start: 384px;
     align-self: end;
+    margin-inline-start: 384px;
   }
 
   .card {
@@ -367,6 +368,7 @@ a:focus-visible {
     grid-column: 2;
     grid-row: 1/2;
   }
+
   .card-tips-item__text {
     margin-block-end: 20px;
   }
