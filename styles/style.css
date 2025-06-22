@@ -164,11 +164,12 @@
   padding-inline: 10px;
 }
 
-.text-section--why {
+.content-section{
   margin-block-end: 50px;
 }
 
-.text-section__title {
+
+.content-section__title {
   margin-block-end: 20px;
   color: var(--color-accent);
   font-family: var(--font-base, sans-serif);
@@ -177,7 +178,7 @@
   line-height: var(--lh-title);
 }
 
-.text-section__subtitle {
+.card__title {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -192,7 +193,7 @@
   background-color: var(--color-accent);
 }
 
-.text-section__paragraph {
+.card__text {
   margin-block-end: 20px;
   font-family: var(--font-base, sans-serif);
   font-weight: var(--fw-regular);
@@ -201,7 +202,7 @@
   letter-spacing: 0;
 }
 
-.text-section__last-paragraph {
+.card__text--last-paragraph {
   margin-block-end: 0px;
 }
 
@@ -230,24 +231,16 @@
   outline: 2px auto var(--color-accent);
 }
 
-.text-section--reducing {
-  margin-block-end: 50px;
-}
-
-.tips-section {
-  margin-block-end: 50px;
-}
-
-.tips-section__subtitle {
+.card-tips__title {
   min-height: 47px;
   margin-block-end: 20px;
 }
 
-.tips-section__item-title {
+.card-tips-item__title {
   font-weight: var(--fw-regular);
 }
 
-.text-section__subtitle-image {
+.card__title-image {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -269,7 +262,7 @@
   margin-block-end: 40px;
 }
 
-.images-section__img {
+.card_image {
   display: block;
   width: 100%;
   height: auto;
@@ -317,7 +310,7 @@
     padding-block-end: 183px;
   }
 
-  .text-section--why {
+  .content-section--why {
     display: grid;
     grid-template-columns: 236px 1fr;
     grid-template-rows: 1fr max-content;
@@ -325,16 +318,8 @@
     margin-block-end: 80px;
   }
 
-  .why-multitasking {
+  .card {
     grid-column: 2/3;
-  }
-
-  .why-dopamine {
-    grid-column: 2/3;
-  }
-
-  .why-section__title {
-    margin-block-end: 0px;
   }
 
   .decorated-zone::before {
@@ -375,7 +360,7 @@
     max-width: 236px;
   }
 
-  .tips-section {
+  .content-section--tips {
     display: grid;
     grid-template-columns: 236px 1fr;
     grid-template-rows: repeat(5, max-content);
@@ -389,15 +374,20 @@
     margin-block-end: 22px;
   }
 
-  .tips-item__paragraph {
+  .card-tips__title{
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .card-tips-item__text {
     margin-block-end: 0px;
   }
 
-  .tip-sky {
+  .card__tip-sky{
     grid-row: 1;
+    margin-block-start: 67px;
   }
 
-  .tips {
+  .card__tips-conteiner {
     grid-column: 2;
   }
 
@@ -405,7 +395,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
-      "subtitle-image subtitle-image subtitle-image"
+      "title-image title-image title-image"
       "sunset sunset ice-cream"
       "img-tape img-books ice-cream"
       "img-tape img-street img-street";
@@ -413,36 +403,36 @@
     margin-block-end: 60px;
   }
 
-  .images-section__img {
+  .card_image{
     height: 100%;
     object-fit: cover;
   }
 
-  .text-section__subtitle-image {
-    grid-area: subtitle-image;
+  .card__title-image {
+    grid-area: title-image;
   }
 
-  .images-section__img-sunset {
+  .card__image-sunset {
     grid-area: sunset;
     object-fit: cover;
   }
 
-  .images-section__img-ice-cream {
+  .card__image-ice-cream {
     grid-area: ice-cream;
     object-fit: cover;
   }
 
-  .images-section__img-tape {
+  .card__image-tape {
     grid-area: img-tape;
     object-fit: cover;
   }
 
-  .images-section__img-books {
+  .card__image-books {
     grid-area: img-books;
     object-fit: cover;
   }
 
-  .images-section__img-street {
+  .card__image-street {
     grid-area: img-street;
     object-fit: cover;
   }
@@ -522,7 +512,7 @@
     max-width: 315px;
   }
 
-  .text-section__content-reducing {
+  .card-section__content-reducing {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -532,7 +522,7 @@
     min-height: 431px;
   }
 
-  .text-section__subtitle {
+  .card__title{
     min-width: 315px;
   }
 
