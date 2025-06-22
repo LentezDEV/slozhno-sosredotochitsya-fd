@@ -2,6 +2,7 @@
   /* dark */
   --color-text: #f1b2ce;
   --color-accent: #ff0070;
+  --color-accent-40: hsla(334, 100%, 50%, 0.4);
   --color-main-title: #db00ff;
   --color-bg: #000028;
   --color-subtitle: #000028;
@@ -10,6 +11,7 @@
   /* light */
   --color-text_light: #353430;
   --color-accent_light: #ff8dcb;
+  --color-accent_light-40: rgba(255, 141, 203, 0.4);
   --color-main-title_light: #ffc2e6;
   --color-bg_light: #fff1f7;
   --color-subtitle_light: #353430;

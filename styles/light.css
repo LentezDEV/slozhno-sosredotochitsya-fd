@@ -3,6 +3,7 @@
 
 :root.theme-light {
   --page-bg-image: url("../images/cover-image-light.png");
+  --color-accent-40:var(--color-accent_light-40);
   --color-text: var(--color-text_light);
   --color-accent: var(--color-accent_light);
   --color-main-title: var(--color-main-title_light);
@@ -20,6 +21,7 @@
     --page-bg-image: url("../images/cover-image-light.png");
     --color-text: var(--color-text_light);
     --color-accent: var(--color-accent_light);
+    --color-accent-40:var(--color-accent_light-40);
     --color-main-title: var(--color-main-title_light);
     --color-bg: var(--color-bg_light);
     --color-subtitle: var(--color-subtitle_light);
