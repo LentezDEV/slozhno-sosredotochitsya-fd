@@ -1,12 +1,15 @@
-
 /* light.css */
 
 :root.theme-light {
   --page-bg-image: url("../images/cover-image-light.png");
-  --color-accent-40:var(--color-accent_light-40);
+  --color-accent-button: var(--color-accent-button-light);
+  --color-accent-button-40: var(--color-accent-button-light-40);
+  --color-accent-menu: var(--color-accent-menu_light);
   --color-text: var(--color-text_light);
   --color-accent: var(--color-accent_light);
+  --color-decorated-elements: var(--color-decorated-elements_light);
   --color-main-title: var(--color-main-title_light);
+  --color-content-title: var(--color-content-title_light);
   --color-bg: var(--color-bg_light);
   --color-subtitle: var(--color-subtitle_light);
 }
@@ -19,14 +22,17 @@
 @media (prefers-color-scheme: light) {
   :root.theme-auto {
     --page-bg-image: url("../images/cover-image-light.png");
+    --color-accent-button: var(--color-accent-button-light);
+    --color-accent-button-40: var(--color-accent-button-light-40);
+    --color-accent-menu: var(--color-accent-menu_light);
     --color-text: var(--color-text_light);
     --color-accent: var(--color-accent_light);
-    --color-accent-40:var(--color-accent_light-40);
+    --color-decorated-elements: var(--color-decorated-elements_light);
     --color-main-title: var(--color-main-title_light);
+    --color-content-title: var(--color-content-title_light);
     --color-bg: var(--color-bg_light);
     --color-subtitle: var(--color-subtitle_light);
   }
-
 
   :root.theme-auto .header__rec {
     visibility: hidden;
